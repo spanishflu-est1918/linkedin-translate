@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 280px;
+      padding: 16px;
+      font-family: -apple-system, system-ui, sans-serif;
+      font-size: 13px;
+      color: #1a1a1a;
+    }
+    h1 {
+      font-size: 15px;
+      margin: 0 0 4px 0;
+    }
+    .subtitle {
+      color: #666;
+      margin: 0 0 16px 0;
+      font-size: 12px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 6px 8px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 12px;
+      box-sizing: border-box;
+    }
+    .saved {
+      color: #16a34a;
+      font-size: 11px;
+      margin-top: 6px;
+      display: none;
+    }
+    .footer {
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 11px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <h1>LinkedIn Translator</h1>
+  <p class="subtitle">What they actually mean.</p>
+  <label for="apiUrl">API URL</label>
+  <input type="text" id="apiUrl" placeholder="http://localhost:8787" />
+  <div class="saved" id="saved">Saved!</div>
+  <div class="footer">Translate LinkedIn posts into honest human language.</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
