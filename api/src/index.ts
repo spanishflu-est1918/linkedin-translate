@@ -10,6 +10,50 @@ const app = new Hono<{ Bindings: Bindings }>();
 
 app.use("*", cors({ origin: "*" }));
 
+// Rate limiting: per-IP + global daily budget (kill switch)
+const rateMap = new Map<string, { count: number; resetAt: number }>();
+const RATE_LIMIT = 30; // per IP per minute
+const RATE_WINDOW = 60_000;
+
+let globalCount = 0;
+let globalResetAt = Date.now() + 86_400_000; // 24h window
+const GLOBAL_DAILY_LIMIT = 500; // total translations per day across all users
+
+app.use("/translate", async (c, next) => {
+  const now = Date.now();
+
+  // Global kill switch
+  if (now > globalResetAt) {
+    globalCount = 0;
+    globalResetAt = now + 86_400_000;
+  }
+  if (globalCount >= GLOBAL_DAILY_LIMIT) {
+    return c.json({ error: "Daily translation limit reached. Try again tomorrow." }, 429);
+  }
+  globalCount++;
+
+  // Per-IP rate limit
+  const ip = c.req.header("cf-connecting-ip") || "unknown";
+  const entry = rateMap.get(ip);
+
+  if (!entry || now > entry.resetAt) {
+    rateMap.set(ip, { count: 1, resetAt: now + RATE_WINDOW });
+  } else if (entry.count >= RATE_LIMIT) {
+    return c.json({ error: "Slow down — too many translations" }, 429);
+  } else {
+    entry.count++;
+  }
+
+  // Cleanup stale entries
+  if (rateMap.size > 10_000) {
+    for (const [key, val] of rateMap) {
+      if (now > val.resetAt) rateMap.delete(key);
+    }
+  }
+
+  await next();
+});
+
 const SYSTEM_PROMPT = `You translate LinkedIn posts into what the person actually means.
 
 Voice: Unhinged but accurate. Like your most savage friend reading LinkedIn over your shoulder. You're not just translating — you're performing an autopsy on their ego. Be absurd, be ridiculous, but always rooted in what they actually mean. The funniest translations are the ones that are painfully true.
@@ -70,7 +114,7 @@ app.post("/translate", async (c) => {
   });
 
   const { text: translation } = await generateText({
-    model: gateway.languageModel("anthropic/claude-sonnet-4-20250514"),
+    model: gateway.languageModel("moonshotai/kimi-k2.5"),
     system: SYSTEM_PROMPT,
     prompt: text,
     maxTokens: 150,

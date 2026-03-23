@@ -1,4 +1,4 @@
-let API_URL = "http://localhost:8787";
+let API_URL = "https://linkedin-translate.spanishflu.workers.dev";
 chrome.storage.sync.get("apiUrl", (data) => {
   if (data.apiUrl) API_URL = data.apiUrl;
 });
