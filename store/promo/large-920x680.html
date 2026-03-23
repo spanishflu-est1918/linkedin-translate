@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--
+  LARGE PROMO TILE: 920x680px
+  Screenshot at exactly this viewport size.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 920px;
+      height: 680px;
+      background: #0d0d0d;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Subtle dot grid */
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,215,0,0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    /* Gold accent bar at bottom */
+    body::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: #ffd700;
+    }
+
+    /* Left panel */
+    .left {
+      width: 400px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 48px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,215,0,0.1);
+      border: 1px solid rgba(255,215,0,0.3);
+      color: #ffd700;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      width: fit-content;
+    }
+
+    .headline {
+      font-size: 44px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .headline span { color: #ffd700; }
+
+    .subhead {
+      font-size: 16px;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 36px;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.65);
+    }
+    .feature-list li::before {
+      content: '✓';
+      width: 18px;
+      height: 18px;
+      background: rgba(255,215,0,0.2);
+      color: #ffd700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #ffd700;
+      color: #0d0d0d;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 24px;
+      letter-spacing: 0.5px;
+      width: fit-content;
+    }
+
+    /* Right panel — demo */
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 48px 40px;
+      position: relative;
+      z-index: 1;
+      gap: 16px;
+    }
+
+    .demo-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .demo-header {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .demo-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #0a66c2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .demo-name { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.8); }
+    .demo-title-text { font-size: 11px; color: rgba(255,255,255,0.35); }
+
+    .demo-original {
+      font-size: 12px;
+      color: rgba(255,255,255,0.3);
+      line-height: 1.5;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+
+    .demo-arrow {
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: #ffd700;
+      opacity: 0.6;
+    }
+
+    .demo-translated {
+      background: rgba(255,215,0,0.08);
+      border: 1px solid rgba(255,215,0,0.25);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .demo-translated-label {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #ffd700;
+      margin-bottom: 4px;
+    }
+    .demo-translated-text {
+      font-size: 13px;
+      color: #fff;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <div class="badge">Chrome Extension</div>
+    <div class="headline"><span>DeLinked</span><br>What they<br>actually mean.</div>
+    <p class="subhead">
+      Hover any LinkedIn post. See the truth underneath the corporate speak. AI-powered, instant, free.
+    </p>
+    <ul class="feature-list">
+      <li>Instant translations on hover</li>
+      <li>Auto-detects your feed posts</li>
+      <li>Cached — no repeat API calls</li>
+      <li>Zero data collection</li>
+    </ul>
+    <div class="cta-btn">Add to Chrome — Free</div>
+  </div>
+
+  <div class="right">
+    <!-- Example 1 -->
+    <div class="demo-card">
+      <div class="demo-header">
+        <div class="demo-avatar">M</div>
+        <div>
+          <div class="demo-name">Marcus Wellington III</div>
+          <div class="demo-title-text">Chief Disruption Evangelist</div>
+        </div>
+      </div>
+      <div class="demo-original">"Humbled to leverage synergistic capabilities in my new role. Vulnerability is the ultimate superpower. 🚀🙏"</div>
+      <div class="demo-arrow">↓</div>
+      <div class="demo-translated">
+        <div class="demo-translated-label">delinked</div>
+        <div class="demo-translated-text">I got a new job and I'm making it sound deep.</div>
+      </div>
+    </div>
+
+    <!-- Example 2 -->
+    <div class="demo-card">
+      <div class="demo-header">
+        <div class="demo-avatar" style="background:#8c5e58;">S</div>
+        <div>
+          <div class="demo-name">Sandra Fitzpatrick-Moore</div>
+          <div class="demo-title-text">People Operations Thought Leader</div>
+        </div>
+      </div>
+      <div class="demo-original">"Failure IS the journey. Each setback made me stronger and more aligned with my authentic purpose. 🔥"</div>
+      <div class="demo-arrow">↓</div>
+      <div class="demo-translated">
+        <div class="demo-translated-label">delinked</div>
+        <div class="demo-translated-text">I read a motivational book and am engagement-baiting for comments.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

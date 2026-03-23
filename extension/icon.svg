@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- DeLinked Icon — Blue bg, BS bubble slashed, truth bubble with wink -->
+
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="#0A66C2"/>
+
+  <!-- BS speech bubble (white) -->
+  <rect x="14" y="16" width="68" height="56" rx="14" fill="#fff"/>
+  <polygon points="24,72 16,88 40,70" fill="#fff"/>
+
+  <!-- Gold slash through BS -->
+  <line x1="74" y1="12" x2="20" y2="78" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Truth bubble (cream with gold border) -->
+  <rect x="52" y="46" width="60" height="44" rx="12" fill="#FFF9E6" stroke="#FFD700" stroke-width="3"/>
+  <polygon points="98,88 108,102 88,88" fill="#FFF9E6"/>
+  <line x1="98" y1="88" x2="108" y2="102" stroke="#FFD700" stroke-width="2.5"/>
+  <line x1="108" y1="102" x2="88" y2="88" stroke="#FFD700" stroke-width="2.5"/>
+
+  <!-- Wink face inside truth bubble -->
+  <!-- Open eye (left) -->
+  <circle cx="68" cy="62" r="3" fill="#D97706"/>
+  <!-- Winking eye (right) -->
+  <path d="M88,58 Q95,65 88,68" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Smirk -->
+  <path d="M70,72 Q82,82 94,72" fill="none" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

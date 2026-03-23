@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+  SMALL PROMO TILE: 440x280px
+  Screenshot at exactly this viewport size.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 440px;
+      height: 280px;
+      background: #0d0d0d;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Subtle grid background */
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    /* Gold accent bar at bottom */
+    body::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: #ffd700;
+    }
+
+    .content {
+      position: relative;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .tagline {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 12px;
+    }
+
+    .headline {
+      font-size: 32px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .headline em {
+      font-style: normal;
+      color: #ffd700;
+    }
+
+    /* Mini before/after example */
+    .example {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 8px;
+      padding: 10px 16px;
+      margin-bottom: 16px;
+      text-align: left;
+      font-size: 11px;
+    }
+    .ex-label {
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+    }
+    .ex-before { color: rgba(255,255,255,0.4); margin-bottom: 6px; }
+    .ex-before .ex-label { color: rgba(255,255,255,0.3); }
+    .ex-after { color: #fff; }
+    .ex-after .ex-label { color: #ffd700; }
+    .divider { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 6px 0; }
+
+    .cta {
+      font-size: 12px;
+      font-weight: 700;
+      color: #ffd700;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="tagline">Chrome Extension</div>
+    <div class="headline"><em>DeLinked</em> — the truth<br>behind every post.</div>
+
+    <div class="example">
+      <div class="ex-before">
+        <div class="ex-label">They wrote</div>
+        "Humbled to leverage synergies in my new role 🚀🙏"
+      </div>
+      <hr class="divider">
+      <div class="ex-after">
+        <div class="ex-label">They meant</div>
+        "I got a job."
+      </div>
+    </div>
+
+    <div class="cta">Hover any post → see what they actually mean</div>
+  </div>
+</body>
+</html>

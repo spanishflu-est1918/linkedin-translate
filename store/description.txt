@@ -1,0 +1,42 @@
+== SHORT DESCRIPTION (max 132 chars) ==
+
+Translates LinkedIn corporate speak into what people actually mean. Hover any post for an honest interpretation.
+
+== DETAILED DESCRIPTION (max 16,000 chars) ==
+
+DeLinked cuts through the buzzword fog.
+
+You know the posts. "Excited to announce I'll be leveraging synergies in my new role as Chief Disruption Evangelist 🚀🙏" — DeLinked tells you what was actually written: "I got a job."
+
+HOW IT WORKS
+
+Hover over any LinkedIn post and see an instant, honest translation powered by AI. The translation overlays the original text so you can toggle between the corporate version and what the person actually meant to say.
+
+No setup required. Works automatically on your LinkedIn feed.
+
+FEATURES
+
+• Auto-translates posts in your feed as you scroll
+• Hover to reveal / move away to restore the original
+• Translations are cached — no repeat API calls for posts you've seen
+• Lightweight — zero impact on LinkedIn performance
+• Uses LinkedIn's own color palette so it feels native
+
+EXAMPLES
+
+Original: "I'm humbled and grateful to share that I've been selected as a Top Voice in Thought Leadership..."
+Translation: "LinkedIn gave me a badge."
+
+Original: "Failure taught me that success requires vulnerability and authentic storytelling."
+Translation: "I read a business book."
+
+Original: "If you're not growing, you're dying. Invest in yourself every single day. 🔥"
+Translation: "Please engage with my content."
+
+PRIVACY
+
+DeLinked only reads the text content of posts on linkedin.com to send for translation. It does not collect, store, or share any personal data. The extension communicates exclusively with its own translation API. No analytics. No tracking. No nonsense.
+
+OPEN SOURCE
+
+Built by @spanishflu. See the code on GitHub.

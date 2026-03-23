@@ -127,7 +127,7 @@ async function processPost(post) {
       overlay.classList.remove("lt-overlay--visible");
     });
   } catch (err) {
-    console.error("LinkedIn Translator:", err);
+    console.error("DeLinked:", err);
   }
 }
 
@@ -149,4 +149,4 @@ observer.observe(document.body, {
   subtree: true,
 });
 
-console.log("LinkedIn Translator: loaded ✓");
+console.log("DeLinked: loaded ✓");

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--
+  SCREENSHOT 1: Translation in action (1280x800)
+  Open in Chrome at exactly 1280x800 viewport, then screenshot.
+  Shows: LinkedIn feed post with the "translated to human" overlay visible.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1280px;
+      height: 800px;
+      background: #f3f2ef;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      overflow: hidden;
+    }
+
+    /* LinkedIn-like navbar */
+    .navbar {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      gap: 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+    .nav-logo {
+      width: 34px; height: 34px;
+      background: #0a66c2;
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 20px; font-weight: 900;
+    }
+    .nav-search {
+      background: #eef3f8;
+      border-radius: 4px;
+      padding: 8px 12px;
+      font-size: 14px;
+      color: #666;
+      width: 280px;
+    }
+    .nav-icons { margin-left: auto; display: flex; gap: 24px; }
+    .nav-icon { display: flex; flex-direction: column; align-items: center; color: #666; font-size: 10px; gap: 2px; }
+    .nav-icon-img { width: 24px; height: 24px; background: #ddd; border-radius: 50%; }
+
+    /* Layout */
+    .layout {
+      display: flex;
+      gap: 16px;
+      max-width: 1060px;
+      margin: 68px auto 0;
+      padding: 16px;
+    }
+
+    /* Left sidebar */
+    .sidebar-left {
+      width: 225px;
+      flex-shrink: 0;
+    }
+    .profile-card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .profile-banner { height: 56px; background: linear-gradient(135deg, #0a66c2, #00a0dc); }
+    .profile-avatar {
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: #ccc;
+      border: 2px solid #fff;
+      margin: -28px 0 8px 12px;
+    }
+    .profile-name { font-size: 14px; font-weight: 600; padding: 0 12px; }
+    .profile-title { font-size: 12px; color: #666; padding: 2px 12px 12px; }
+
+    /* Feed */
+    .feed { flex: 1; max-width: 552px; }
+
+    /* Post card */
+    .post-card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+    }
+    .post-header { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 12px; }
+    .post-avatar { width: 48px; height: 48px; border-radius: 50%; background: #0a66c2; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 18px; }
+    .post-meta-name { font-size: 14px; font-weight: 600; }
+    .post-meta-title { font-size: 12px; color: #666; }
+    .post-meta-time { font-size: 12px; color: #999; }
+
+    /* Post text container — has the overlay */
+    .post-text-container {
+      position: relative;
+      cursor: pointer;
+    }
+    .post-text {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #1a1a1a;
+    }
+
+    /* The translation overlay (shown) */
+    .lt-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 12px 16px;
+      background: #fff;
+      border-radius: 4px;
+      opacity: 1;
+      z-index: 10;
+      border: 1.5px solid #0a66c2;
+    }
+    .lt-overlay__label {
+      font-size: 11px;
+      font-weight: 600;
+      color: #0a66c2;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .lt-overlay__content {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #1a1a1a;
+    }
+
+    /* Mouse cursor illusion */
+    .cursor-hint {
+      position: absolute;
+      right: -20px;
+      top: 40%;
+      font-size: 22px;
+      pointer-events: none;
+    }
+
+    .post-actions {
+      display: flex;
+      gap: 4px;
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #e0e0e0;
+    }
+    .post-action {
+      flex: 1;
+      text-align: center;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #666;
+      background: transparent;
+    }
+
+    /* Second post (normal, in background) */
+    .post-card-dim {
+      opacity: 0.55;
+    }
+
+    /* Right sidebar */
+    .sidebar-right { width: 300px; flex-shrink: 0; }
+    .widget {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+    }
+    .widget-title { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+    .widget-item { font-size: 13px; color: #666; padding: 6px 0; border-top: 1px solid #f3f2ef; }
+
+    /* Extension badge */
+    .extension-badge {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      background: #0a66c2;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(10,102,194,0.4);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .extension-badge::before { content: "🔍"; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">in</div>
+    <div class="nav-search">🔍 Search</div>
+    <div class="nav-icons">
+      <div class="nav-icon"><div class="nav-icon-img"></div>Home</div>
+      <div class="nav-icon"><div class="nav-icon-img"></div>Network</div>
+      <div class="nav-icon"><div class="nav-icon-img"></div>Jobs</div>
+      <div class="nav-icon"><div class="nav-icon-img"></div>Messaging</div>
+    </div>
+  </nav>
+
+  <div class="layout">
+    <!-- Left sidebar -->
+    <div class="sidebar-left">
+      <div class="profile-card">
+        <div class="profile-banner"></div>
+        <div class="profile-avatar"></div>
+        <div class="profile-name">Your Name</div>
+        <div class="profile-title">Head of Strategic Initiatives</div>
+      </div>
+    </div>
+
+    <!-- Feed -->
+    <div class="feed">
+      <!-- Post 1 — with overlay visible -->
+      <div class="post-card">
+        <div class="post-header">
+          <div class="post-avatar">M</div>
+          <div>
+            <div class="post-meta-name">Marcus Wellington III</div>
+            <div class="post-meta-title">Chief Disruption Evangelist @ Synergy Corp</div>
+            <div class="post-meta-time">2h · 🌍</div>
+          </div>
+        </div>
+
+        <div class="post-text-container">
+          <!-- Original (behind overlay) -->
+          <div class="post-text">
+            Humbled and incredibly grateful to announce that I'll be leveraging my unique synergistic
+            capabilities in a new role as Head of Transformative Innovation at a visionary organization
+            that truly understands authentic leadership. This journey has taught me that vulnerability
+            is the ultimate superpower. Excited to disrupt the status quo. 🚀🙏 #OpenToWork #Blessed
+          </div>
+
+          <!-- Translation overlay (hover state shown) -->
+          <div class="lt-overlay">
+            <div class="lt-overlay__label">translated to human</div>
+            <div class="lt-overlay__content">
+              I got a new job and I'm posting about it in a way that sounds profound
+              but says nothing about what the job actually is.
+            </div>
+          </div>
+          <div class="cursor-hint">↖</div>
+        </div>
+
+        <div class="post-actions">
+          <div class="post-action">👍 Like</div>
+          <div class="post-action">💬 Comment</div>
+          <div class="post-action">🔄 Repost</div>
+          <div class="post-action">📤 Send</div>
+        </div>
+      </div>
+
+      <!-- Post 2 — normal, dimmed -->
+      <div class="post-card post-card-dim">
+        <div class="post-header">
+          <div class="post-avatar" style="background:#8c5e58;">S</div>
+          <div>
+            <div class="post-meta-name">Sandra Fitzpatrick-Moore</div>
+            <div class="post-meta-title">People Operations Thought Leader</div>
+            <div class="post-meta-time">4h · 🌍</div>
+          </div>
+        </div>
+        <div class="post-text">
+          Failure is not the opposite of success — it IS the journey. I've failed
+          more times than I can count, and each failure made me stronger, wiser, and
+          more aligned with my authentic purpose. What failure taught YOU today? 🔥
+        </div>
+      </div>
+    </div>
+
+    <!-- Right sidebar -->
+    <div class="sidebar-right">
+      <div class="widget">
+        <div class="widget-title">LinkedIn News</div>
+        <div class="widget-item">AI reshapes workplace dynamics</div>
+        <div class="widget-item">Top skills of 2026 revealed</div>
+        <div class="widget-item">Remote work debate continues</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="extension-badge">DeLinked active</div>
+</body>
+</html>

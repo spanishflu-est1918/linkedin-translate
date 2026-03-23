@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-03-23T13:47:13.083Z",
+  "model": "sonnet",
+  "corpusSize": 2,
+  "aggregate": {
+    "baseline": {
+      "accuracy": 8,
+      "humor": 9,
+      "brevity": 10,
+      "kindness": 5,
+      "point_capture": 8
+    },
+    "revised": {
+      "accuracy": 8,
+      "humor": 7,
+      "brevity": 7,
+      "kindness": 6,
+      "point_capture": 9
+    },
+    "wins": {
+      "baseline": 1,
+      "revised": 1,
+      "tie": 0
+    }
+  },
+  "results": [
+    {
+      "id": 1,
+      "cluster": "after_much_reflection",
+      "url": "https://www.linkedin.com/posts/trentonmoss_after-much-reflection-im-delighted-to-share-activity-7435240292338868225-TvyX",
+      "title": "After much reflection, I’m delighted to share some exciting personal news...",
+      "excerpt": "After much reflection, I’m delighted to share some exciting personal news... I’m absolutely thrilled and deeply honoured to announce this... I couldn’t be more proud or grateful to finally reveal that... I’m a judge in this year’s BIMA 100.",
+      "outputs": {
+        "baseline": "I'm a judge at an awards show I just described like I cured cancer.",
+        "revised": "I left the announcement buried so you'd wade through three sentences of me worshipping myself first."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 5,
+          "humor": 5,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 5
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 3,
+          "kindness": 2,
+          "point_capture": 4
+        },
+        "notes": "Baseline lands the joke cleanly in one image. Revised explains the joke, which kills it, and reads as scolding rather than wit."
+      }
+    },
+    {
+      "id": 2,
+      "cluster": "after_much_reflection",
+      "url": "https://www.linkedin.com/posts/kennylayton_after-much-reflection-ive-made-the-tough-activity-7397363120689680386-OfgV",
+      "title": "After much reflection, I’ve made the tough decision to move on from my role at New Balance.",
+      "excerpt": "After much reflection, I’ve made the tough decision to move on from my role at New Balance. This chapter has been one of the most meaningful in my career. I’m grateful for every mile, project, trailhead, and starting line, and for the people who made it all feel human.",
+      "outputs": {
+        "baseline": "I got laid off but found a way to make it sound like a trail run.",
+        "revised": "I left, and I'd like you to picture me in good shoes while I say so."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline assumes layoff (unverified) and punches down. Revised nails the brand-signaling subtext with wit and stays fair to ambiguous circumstances."
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-03-23T15:15:09.647Z",
+  "model": "sonnet",
+  "corpusSize": 1,
+  "aggregate": {
+    "baseline": {
+      "accuracy": 3,
+      "humor": 4,
+      "brevity": 4,
+      "kindness": 2,
+      "point_capture": 3
+    },
+    "revised": {
+      "accuracy": 5,
+      "humor": 3,
+      "brevity": 5,
+      "kindness": 4,
+      "point_capture": 5
+    },
+    "wins": {
+      "baseline": 0,
+      "revised": 1,
+      "tie": 0
+    }
+  },
+  "results": [
+    {
+      "id": 31,
+      "cluster": "laid_off_help",
+      "url": "https://www.linkedin.com/posts/laurieruettimann_if-youve-been-laid-off-recently-i-have-activity-7330774174526824448-UsFm",
+      "title": "If you’ve been laid off recently, I have tough but tender messages for you.",
+      "excerpt": "If you’ve been laid off recently, I have tough but tender messages for you: Don’t hang out with your ex-coworkers. And stop gossiping about your old company. Post-layoff community can sometimes turn into a trap.",
+      "outputs": {
+        "baseline": "Your severance package came with a support group and you're mad it's not serving you better.",
+        "revised": "Grief groups feel good until they become a reason to stay unemployed."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 4,
+          "brevity": 4,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline is witty but misreads the post's sincere warning; revised captures the trap metaphor and the stagnation risk directly."
+      }
+    }
+  ]
+}

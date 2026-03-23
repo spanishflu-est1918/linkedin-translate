@@ -1,0 +1,1478 @@
+{
+  "generatedAt": "2026-03-23T15:11:05.307Z",
+  "model": "sonnet",
+  "corpusSize": 50,
+  "aggregate": {
+    "baseline": {
+      "accuracy": 169,
+      "humor": 168,
+      "brevity": 230,
+      "kindness": 148,
+      "point_capture": 170
+    },
+    "revised": {
+      "accuracy": 203,
+      "humor": 166,
+      "brevity": 221,
+      "kindness": 162,
+      "point_capture": 209
+    },
+    "wins": {
+      "baseline": 18,
+      "revised": 32,
+      "tie": 0
+    }
+  },
+  "results": [
+    {
+      "id": 1,
+      "cluster": "after_much_reflection",
+      "url": "https://www.linkedin.com/posts/trentonmoss_after-much-reflection-im-delighted-to-share-activity-7435240292338868225-TvyX",
+      "title": "After much reflection, I’m delighted to share some exciting personal news...",
+      "excerpt": "After much reflection, I’m delighted to share some exciting personal news... I’m absolutely thrilled and deeply honoured to announce this... I couldn’t be more proud or grateful to finally reveal that... I’m a judge in this year’s BIMA 100.",
+      "outputs": {
+        "baseline": "I'm a judge. The end.",
+        "revised": "I'm a judge for an award and built up to it like I was announcing a pregnancy."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 5,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Revised nails the subtext (absurd LinkedIn pomposity) with the pregnancy simile. Baseline is punchy but misses the joke entirely."
+      }
+    },
+    {
+      "id": 2,
+      "cluster": "after_much_reflection",
+      "url": "https://www.linkedin.com/posts/kennylayton_after-much-reflection-ive-made-the-tough-activity-7397363120689680386-OfgV",
+      "title": "After much reflection, I’ve made the tough decision to move on from my role at New Balance.",
+      "excerpt": "After much reflection, I’ve made the tough decision to move on from my role at New Balance. This chapter has been one of the most meaningful in my career. I’m grateful for every mile, project, trailhead, and starting line, and for the people who made it all feel human.",
+      "outputs": {
+        "baseline": "I got laid off but I own really nice sneakers now.",
+        "revised": "I left, and I'd like you to feel the distance before I announce where I'm going."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline lands a joke but misreads tone; revised nails the performative grief + teaser structure of the post's actual subtext."
+      }
+    },
+    {
+      "id": 3,
+      "cluster": "after_much_reflection",
+      "url": "https://www.linkedin.com/posts/mariedglewis_after-much-reflection-today-marked-my-final-activity-7322695372311519232-_H25",
+      "title": "After much reflection, today marked my final day at Cohesity.",
+      "excerpt": "After much reflection, today marked my final day at Cohesity. This wasn't an easy decision: the past year challenged me in ways I hadn't anticipated, and I found myself questioning whether I was running from difficulty or seeking more alignment.",
+      "outputs": {
+        "baseline": "I got fired but I made it a therapy session so you'd feel bad asking questions.",
+        "revised": "I left, and I'm still deciding which story makes me the hero."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 2,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 1,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 5
+        },
+        "notes": "Baseline too cynical/inaccurate (post doesn't imply firing); revised nails the self-narrative ambiguity that is the actual subtext."
+      }
+    },
+    {
+      "id": 4,
+      "cluster": "after_much_reflection",
+      "url": "https://www.linkedin.com/posts/scott-valk-b956b76_after-much-reflection-ive-decided-its-activity-7415725341803053057-hqVl",
+      "title": "After much reflection, I’ve decided it’s time to turn the page and begin a new chapter. I’m officially retiring.",
+      "excerpt": "After much reflection, I’ve decided it’s time to turn the page and begin a new chapter. I’m officially retiring. This decision has allowed me to reflect on my career journey. I started as a software developer and later moved into sales and leadership.",
+      "outputs": {
+        "baseline": "I got old.",
+        "revised": "I left, and I want you to watch me frame it as wisdom."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 2,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 2
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline is punchy but reductive; revised nails the performative self-reflection subtext with sharp irony while staying fair."
+      }
+    },
+    {
+      "id": 5,
+      "cluster": "after_much_reflection",
+      "url": "https://www.linkedin.com/posts/ashleymcnamara_after-much-reflection-ive-decided-to-step-activity-7411529788844195841-36iJ",
+      "title": "After much reflection, I’ve decided to step away from the workforce for a season to be fully present with my two young daughters.",
+      "excerpt": "After much reflection, I’ve decided to step away from the workforce for a season to be fully present with my two young daughters. It wasn’t an easy choice — I value my career deeply — but this time feels important and fleeting.",
+      "outputs": {
+        "baseline": "I got laid off and have great PR instincts.",
+        "revised": "I got fired or laid off and this sounds better."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 3,
+          "humor": 2,
+          "brevity": 4,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "notes": "Baseline lands the joke cleanly; revised is blunter but adds no wit and misses the PR-savvy subtext that makes the original funny."
+      }
+    },
+    {
+      "id": 6,
+      "cluster": "thrilled_to_announce",
+      "url": "https://www.linkedin.com/posts/adamcreeger_im-thrilled-to-announce-that-ive-joined-activity-7440443169227526145-yNFw",
+      "title": "I'm thrilled to announce that I've joined Slate full time as CTO.",
+      "excerpt": "I'm thrilled to announce that I've joined Slate full time as CTO. I am so excited to be joining such a great team at a time of transformation in both the content creation space and the tech industry. We're actively hiring Frontend, Backend, AI and Video engineers.",
+      "outputs": {
+        "baseline": "I got a new job and we're hiring, but watch how long it took me to get to that part.",
+        "revised": "We're hiring, and I'd like you to know I'm important now."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 3,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 5,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "notes": "Baseline lands the sharper structural insight (buried lede), but revised's economy and 'important now' phrasing hit harder. Kindness gap is real but acceptable here."
+      }
+    },
+    {
+      "id": 7,
+      "cluster": "thrilled_to_announce",
+      "url": "https://www.linkedin.com/posts/the-carlos-caro_im-thrilled-to-announce-my-10-year-anniversary-activity-7438952061406302208-MafU",
+      "title": "I'm thrilled to announce my 10-year anniversary of obsessively saving LinkedIn posts to read later without ever going back to a single one.",
+      "excerpt": "I'm thrilled to announce my 10-year anniversary of obsessively saving LinkedIn posts to read later without ever going back to a single one. This wouldn't have been possible without the incredible community of LinkedIn creators writing epic, save-worthy posts.",
+      "outputs": {
+        "baseline": "I've been stress-collecting other people's productivity tips for a decade and my life is exactly the same.",
+        "revised": "I have 10,000 bookmarks and zero memories."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 3,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 5,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Revised lands harder with fewer words; baseline over-explains and adds 'productivity' framing not in original."
+      }
+    },
+    {
+      "id": 8,
+      "cluster": "thrilled_to_announce",
+      "url": "https://www.linkedin.com/posts/boluwatifesegunoluwayomicopyeditor_im-thrilled-to-announce-that-i-completed-activity-7440759125485010945-Mn1d",
+      "title": "I'm thrilled to announce that I completed a 40-day journey of showing up here consistently.",
+      "excerpt": "I'm thrilled to announce that I completed a 40-day journey of showing up here consistently. I set out to gain 6,000 followers in 40 days. I didn't even gain a thousand, and I'm at peace with that. One of my goals I crushed completely.",
+      "outputs": {
+        "baseline": "I failed my own challenge and I'm rebranding the failure as enlightenment.",
+        "revised": "I showed up for 40 days, didn't get the followers, but need you to know I'm fine with it — please admire my equanimity."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 4,
+          "brevity": 3,
+          "kindness": 3,
+          "point_capture": 5
+        },
+        "notes": "Baseline is punchier but too mean; misses the self-congratulation-as-peace angle. Revised nails the subtext: performative equanimity seeking validation."
+      }
+    },
+    {
+      "id": 9,
+      "cluster": "thrilled_to_announce",
+      "url": "https://www.linkedin.com/posts/tylerdwells_im-thrilled-to-announce-that-i-will-have-activity-7427075831921049601-k-PP",
+      "title": "I'm thrilled to announce that I will have an announcement sometime soon.",
+      "excerpt": "I'm thrilled to announce that I will have an announcement sometime soon. Please stay tuned for a future announcement once I have firmer timing on when I can make the announcement.",
+      "outputs": {
+        "baseline": "I have news that I won't tell you yet, and I needed you to know that.",
+        "revised": "Please follow me before I've given you any reason to."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 5,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 5
+        },
+        "notes": "Revised nails the follower-economy subtext more precisely; baseline is accurate but stops at withholding rather than the underlying ask."
+      }
+    },
+    {
+      "id": 10,
+      "cluster": "thrilled_to_announce",
+      "url": "https://www.linkedin.com/posts/abudershapiro_im-thrilled-to-announce-that-i-started-a-activity-7419765197768269826-rks0",
+      "title": "I'm thrilled to announce that I started a new role this week, leading the People function at Clay.",
+      "excerpt": "I'm thrilled to announce that I started a new role this week, leading the People function at Clay. Clay caught my attention because it was living the future of work while the rest of us were blabbering about it.",
+      "outputs": {
+        "baseline": "I got a new job and I need 400 words to explain why I deserve a standing ovation for it.",
+        "revised": "I got a better job and want you to know I know the difference between hype and the real thing."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 2
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline lands the joke but misses the sincere self-awareness baked into the post. Revised captures the actual subtext without punching down."
+      }
+    },
+    {
+      "id": 11,
+      "cluster": "humbled_to_announce",
+      "url": "https://www.linkedin.com/posts/ryankberner_humbled-to-announce-ive-joined-topline-pro-activity-7434236149243748352-KIeb",
+      "title": "Humbled to announce I’ve joined Topline Pro as VP of Sales.",
+      "excerpt": "Humbled to announce I’ve joined Topline Pro as VP of Sales. The first thing I saw when I walked into the office was a sign on the wall that said: “No Bullsh*t.” I remember thinking in that moment, “I’m home.”",
+      "outputs": {
+        "baseline": "I got a VP title and I need you to know I'm a no-nonsense guy, so here's three paragraphs about it.",
+        "revised": "I changed jobs and would like you to know I'm the kind of person who doesn't bullsh*t about it."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 5,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 5
+        },
+        "revised": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 3
+        },
+        "notes": "Baseline nails the irony of performing authenticity at length. Revised is accurate but misses the self-congratulatory humblebrag loop that is the real joke."
+      }
+    },
+    {
+      "id": 12,
+      "cluster": "humbled_to_announce",
+      "url": "https://www.linkedin.com/posts/ibtehajdesign_humbled-to-announce-ive-joined-an-engagement-activity-7428005839854211072-jGDU",
+      "title": "Humbled to announce I've joined an ENGAGEMENT POD!",
+      "excerpt": "Humbled to announce I've joined an ENGAGEMENT POD! Now my posts getting 500+ likes, 200 comments saying \"Great post!\" from people who didn't read it. Just kidding… I didn’t join any pods.",
+      "outputs": {
+        "baseline": "I paid people to fake-clap for me, and I'm bragging about not doing it.",
+        "revised": "I paid for a fake audience to prove I don't need a fake audience."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Revised nails the self-congratulatory irony: virtue-signaling by describing the vice. Baseline loses the recursive joke; revised keeps the paradox tight."
+      }
+    },
+    {
+      "id": 13,
+      "cluster": "humbled_to_announce",
+      "url": "https://www.linkedin.com/posts/marina-kobzeva-solidarity_im-humbled-to-announce-that-over-the-last-activity-7435332411300745217-S-hq",
+      "title": "I’m humbled to announce that over the last two months, I have been a mess.",
+      "excerpt": "I’m humbled to announce that over the last two months, I have been a mess. No new role or fellowship. Not even a certification. I remained quietly, professionally functional, but a mess nonetheless.",
+      "outputs": {
+        "baseline": "Still employed. Devastated about it.",
+        "revised": "Still employed. Wants credit for it."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 5,
+          "humor": 5,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "revised": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 2
+        },
+        "notes": "Baseline nails the self-deprecating irony. Revised misreads the post as brag-fishing; the author is genuinely struggling, not seeking credit."
+      }
+    },
+    {
+      "id": 14,
+      "cluster": "humbled_to_announce",
+      "url": "https://www.linkedin.com/posts/hermannalex_im-humbled-to-announce-that-ive-officially-activity-7422955221372301313-cRUB",
+      "title": "I’m humbled to announce that I’ve officially been recognized by The International iGaming Recognition Institute.",
+      "excerpt": "I’m humbled to announce that I’ve officially been recognized by The International iGaming Recognition Institute. After years of relentless hustle, networking, and saying “let me introduce you”… I have been awarded: “The ‘I Know a Guy’ Award for Getting into the Sold-Out Party.”",
+      "outputs": {
+        "baseline": "A professional contact's charity finally paid off.",
+        "revised": "You won a trophy for knowing bouncers, and LinkedIn is where you chose to announce it."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 2,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 5,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline is too flat and misses the joke. Revised nails the self-aware absurdity, bouncer=networking metaphor, and LinkedIn-as-wrong-venue meta-layer."
+      }
+    },
+    {
+      "id": 15,
+      "cluster": "humbled_to_announce",
+      "url": "https://www.linkedin.com/posts/hariprasad20_im-super-humbled-to-announce-something-here-activity-7425535620262895616-ckmX",
+      "title": "I’m super humbled to announce something here with my LinkedIn community.",
+      "excerpt": "I’m super humbled to announce something here with my LinkedIn community. Over the years, I’ve helped thousands of people with their careers. Thousands of people land jobs. Thousands of lives change directions. A lot of people ask, “What’s the secret?”",
+      "outputs": {
+        "baseline": "I made a PDF.",
+        "revised": "I sell a course now."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 5,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "notes": "Baseline nails the humble-brag deflation with peak comic timing. Revised is accurate but flatter; 'course' feels mean vs. the gentler PDF absurdity."
+      }
+    },
+    {
+      "id": 16,
+      "cluster": "nobody_talks_about",
+      "url": "https://www.linkedin.com/posts/rubendominguezibar_nobody-talks-about-the-claude-power-users-activity-7440804367336747008-hVC3",
+      "title": "nobody talks about the Claude power users.",
+      "excerpt": "nobody talks about the Claude power users. Here's their entire playbook. How serious builders co-work with Claude. How to make Claude Code your Chief of Staff. The Code Reviewer that catches what humans miss.",
+      "outputs": {
+        "baseline": "I wrote a list of features from Anthropic's marketing page and called it a \"playbook.\"",
+        "revised": "Please see me as the person who figured out Claude before you did."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Revised nails the status-seeking subtext. Baseline critiques surface-level fluff but misses the real flex: 'I'm ahead of you.'"
+      }
+    },
+    {
+      "id": 17,
+      "cluster": "nobody_talks_about",
+      "url": "https://www.linkedin.com/posts/michael-kisilenko-ceo_nobody-talks-about-this-business-model-activity-7441807055088259073-MLRI",
+      "title": "Nobody talks about this business model…",
+      "excerpt": "Nobody talks about this business model… Give away your product. Never enforce limits. Win anyway for 20+ years.",
+      "outputs": {
+        "baseline": "\"We made Wikipedia.\"",
+        "revised": "Please admire how contrarian I am for describing freemium."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 5,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 2,
+          "humor": 4,
+          "brevity": 3,
+          "kindness": 1,
+          "point_capture": 2
+        },
+        "notes": "Baseline IDs the subject precisely. Revised is witty but wrong: Wikipedia isn't freemium (no paid tier), and mocking the format isn't translating the post."
+      }
+    },
+    {
+      "id": 18,
+      "cluster": "nobody_talks_about",
+      "url": "https://www.linkedin.com/posts/andyelliottofficial_nobody-talks-about-the-thousands-of-videos-activity-7437968833245515776-lmua",
+      "title": "Nobody talks about the thousands of videos I posted before the first one ever went viral.",
+      "excerpt": "Nobody talks about the thousands of videos I posted before the first one ever went viral. Nobody talks about the studio apartment where my wife and I were raising three kids while trying to build something bigger for our family.",
+      "outputs": {
+        "baseline": "My wife and I now have a big house.",
+        "revised": "They want you to know the mansion was earned."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 2,
+          "humor": 2,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 2
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 4,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline strips out the struggle narrative. Revised nails the meta-irony: performative humility as a flex. 'They want you to know' does real work."
+      }
+    },
+    {
+      "id": 19,
+      "cluster": "nobody_talks_about",
+      "url": "https://www.linkedin.com/posts/alex-mccann-ba1718230_nobody-talks-about-the-role-of-luck-in-careers-activity-7440404233885126656-6sQ6",
+      "title": "Nobody talks about the role of luck in careers.",
+      "excerpt": "Nobody talks about the role of luck in careers. I get it. It undermines the story we all want to believe, that good decisions lead to good results and bad decisions lead to bad ones.",
+      "outputs": {
+        "baseline": "Everyone on LinkedIn talks about the role of luck in careers.",
+        "revised": "Please see me as both self-aware and wise while I validate your imposter syndrome."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 1,
+          "humor": 2,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 1
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 5
+        },
+        "notes": "Baseline contradicts the post literally. Revised nails the performative humility subtext with economy. Neither is especially kind but the post isn't either."
+      }
+    },
+    {
+      "id": 20,
+      "cluster": "nobody_talks_about",
+      "url": "https://www.linkedin.com/posts/katarina-perisic_nobody-talks-about-this-part-in-the-startup-activity-7435689403018055681-4eCq",
+      "title": "Nobody talks about this part in the startup world.",
+      "excerpt": "Nobody talks about this part in the startup world. Working with family, friends, and partners who were in your life before the company. It’s a blessing and a curse at the same time.",
+      "outputs": {
+        "baseline": "The holiday party is also a therapy session.",
+        "revised": "You want people who knew you before the company to know what it cost you."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 2,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 2
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 2,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline is witty but misses the emotional weight. Revised captures the vulnerability and relational cost the post is really about."
+      }
+    },
+    {
+      "id": 21,
+      "cluster": "stop_scrolling",
+      "url": "https://www.linkedin.com/posts/justinwelsh_stop-scrolling-start-creating-every-activity-7346867374974746626-TjT4",
+      "title": "Stop scrolling, start creating.",
+      "excerpt": "Stop scrolling. Start creating. Every minute you spend consuming could be a minute spent building. Your first 100 posts will suck. Your first product will flop. Your first launch will disappoint. And that's exactly why you need to start today.",
+      "outputs": {
+        "baseline": "Your first 100 posts will suck. That's the threat AND the sales pitch.",
+        "revised": "They want credit for shipping before they've shipped anything."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 2,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 2
+        },
+        "notes": "Baseline nails the rhetorical trick with wit. Revised projects author-hypocrisy not in the text; post addresses the reader, not the writer's own record."
+      }
+    },
+    {
+      "id": 22,
+      "cluster": "stop_scrolling",
+      "url": "https://www.linkedin.com/posts/stevenbartlett-123_so-many-of-us-cant-stop-scrolling-and-most-activity-7429072443341746177-RQMO",
+      "title": "So many of us can’t stop scrolling and most of us don’t understand why…",
+      "excerpt": "So many of us can’t stop scrolling and most of us don’t understand why. I’m joined by two experts who break down exactly what short-form content is doing to our brains.",
+      "outputs": {
+        "baseline": "You're about to be told you watch too much TikTok by someone who made a podcast about it.",
+        "revised": "You invited two scientists to explain why you can't stop watching videos, in a video."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 4,
+          "brevity": 4,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline lands a joke but misreads format (podcast not video) and punches at the audience. Revised nails the irony cleanly and accurately."
+      }
+    },
+    {
+      "id": 23,
+      "cluster": "stop_scrolling",
+      "url": "https://www.linkedin.com/posts/dan-mott_stop-scrolling-youre-wasting-precious-activity-7199076435511123968-1L9M",
+      "title": "Stop scrolling. You’re wasting precious time and energy.",
+      "excerpt": "Stop scrolling. You’re wasting precious time and energy. I used to spend hours every day scrolling the feed, hoping customers would raise their hands. Now I spend focused time creating content, posting, and engaging.",
+      "outputs": {
+        "baseline": "You switched from lurking on LinkedIn to posting on LinkedIn.",
+        "revised": "You realized scrolling is unproductive, so now you spend hours every day on LinkedIn doing it differently."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline is punchy but too reductive. Revised lands the irony that the behavior barely changed—just the label—which is the real subtext."
+      }
+    },
+    {
+      "id": 24,
+      "cluster": "stop_scrolling",
+      "url": "https://www.linkedin.com/posts/dmartell_hey-stop-scrolling-for-a-second-youve-activity-7409674962858483712-xvM0",
+      "title": "Hey. Stop scrolling for a second.",
+      "excerpt": "Hey. Stop scrolling for a second. You've hit a checkpoint. No hashtags. No algorithm magic. You're seeing this because you need to hear it: You're doing well. Really well.",
+      "outputs": {
+        "baseline": "You're okay and I need engagement points for saying it.",
+        "revised": "You want credit for skipping the tactics while doing the tactics."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 5
+        },
+        "notes": "Revised nails the meta-irony: the post performs authenticity as a tactic. Baseline is blunt but misses the self-congratulatory subtext."
+      }
+    },
+    {
+      "id": 25,
+      "cluster": "stop_scrolling",
+      "url": "https://www.linkedin.com/posts/sandyacarter_stop-scrolling-for-a-second-look-at-this-activity-7441128998966931456-jZav",
+      "title": "Stop scrolling for a second. Look at this tiny red dot.",
+      "excerpt": "Stop scrolling for a second. Look at this tiny red dot. I had a moment of panic where I felt completely behind. Then I saw a visual about global AI adoption and wanted to put the scale into perspective.",
+      "outputs": {
+        "baseline": "You just googled something scary and want credit for calming down about it.",
+        "revised": "You're not behind; you just needed a reason to post."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 5
+        },
+        "notes": "Revised nails the performative-reassurance subtext with less cruelty; baseline's google jab misreads the mechanic."
+      }
+    },
+    {
+      "id": 26,
+      "cluster": "personal_stuff",
+      "url": "https://www.linkedin.com/posts/muralisankarkumaresan_i-dont-usually-post-about-personal-stuff-activity-7287287798112428032-Qz3o",
+      "title": "I don't usually post about personal stuff, but I had to share this.",
+      "excerpt": "I don't usually post about personal stuff, but I had to share this. I had an interesting chat with my 10-year-old son about what he wants to become, and his answers surprised me.",
+      "outputs": {
+        "baseline": "My kid said something that made me sound wise by association, and I need you all to witness it.",
+        "revised": "He asked his kid a question and got a cute answer he's now monetizing into thought leadership."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 4,
+          "kindness": 2,
+          "point_capture": 5
+        },
+        "notes": "Baseline lands the joke warmly. Revised nails the subtext but 'monetizing' reads mean, hurting kindness without earning extra laughs."
+      }
+    },
+    {
+      "id": 27,
+      "cluster": "personal_stuff",
+      "url": "https://www.linkedin.com/posts/mathewclarkau_i-dont-usually-post-about-personal-stuff-activity-7433794130209853440---sd",
+      "title": "I don’t usually post about personal stuff on LinkedIn. But this matters.",
+      "excerpt": "I don’t usually post about personal stuff on LinkedIn. But this matters. A close friend of ours has recently been diagnosed with breast cancer. My wife has decided to do a squat challenge to raise funds for the National Breast Cancer Foundation.",
+      "outputs": {
+        "baseline": "My wife is doing squats for someone she loves. Please donate.",
+        "revised": "She's fundraising. Link's in the comments."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 2,
+          "brevity": 5,
+          "kindness": 5,
+          "point_capture": 5
+        },
+        "revised": {
+          "accuracy": 3,
+          "humor": 1,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 1
+        },
+        "notes": "Baseline keeps the emotional core (love, personal stakes). Revised strips all context and warmth, missing the point entirely."
+      }
+    },
+    {
+      "id": 28,
+      "cluster": "personal_stuff",
+      "url": "https://www.linkedin.com/posts/abbee-mclatchie-398538107_i-dont-usually-post-on-here-at-weekends-activity-7372666230807359488-qNeJ",
+      "title": "I don’t usually post on here at weekends. And I don’t usually post about personal stuff.",
+      "excerpt": "I don’t usually post on here at weekends. And I don’t usually post about personal stuff. But sometimes the personal is the professional. This week, for the second time this year, my nephew became homeless.",
+      "outputs": {
+        "baseline": "He's homeless twice. I posted anyway.",
+        "revised": "He's homeless again and I decided that's your problem now."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 2,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 1,
+          "point_capture": 2
+        },
+        "notes": "Baseline is terse but lands with gravity. Revised reads as flippant/cold — misses the earnest vulnerability of breaking posting habits to share something hard."
+      }
+    },
+    {
+      "id": 29,
+      "cluster": "personal_stuff",
+      "url": "https://www.linkedin.com/posts/billkleyman_i-dont-usually-post-about-personal-stuff-activity-6853054939669770241-0rkG",
+      "title": "I don't usually post about personal stuff here... but as a blogger dad, this made me super proud!",
+      "excerpt": "I don't usually post about personal stuff here... but as a blogger dad, this made me super proud. My daughter had her very first blog written about her.",
+      "outputs": {
+        "baseline": "Someone wrote something about his kid, and he's making it about himself.",
+        "revised": "Someone wrote about his kid and he's using her as content."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 2,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 5
+        },
+        "notes": "Revised nails the subtext: he's a 'blogger dad' instrumentalizing his daughter's moment. Baseline is blunter but misses the content-farming angle."
+      }
+    },
+    {
+      "id": 30,
+      "cluster": "personal_stuff",
+      "url": "https://www.linkedin.com/posts/scott-o-donnell-phd-16030939_i-dont-usually-post-about-personal-stuff-activity-7137587416671870977--Cor",
+      "title": "I don’t usually post about personal stuff, but I think this rare moment is worth noting.",
+      "excerpt": "I don’t usually post about personal stuff, but I think this rare moment is worth noting when all 3 sons are Dr. O’Donnell. My mother helped raise three sons who all became doctors.",
+      "outputs": {
+        "baseline": "My mom did something impressive but I need you to know I'm also a doctor.",
+        "revised": "She wants you to know her sons are doctors. All three of them. Did she mention they're all doctors?"
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 5,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Revised nails the repetitive bragging subtext with warmth; baseline is too cynical and undersells the maternal pride angle"
+      }
+    },
+    {
+      "id": 31,
+      "cluster": "laid_off_help",
+      "url": "https://www.linkedin.com/posts/laurieruettimann_if-youve-been-laid-off-recently-i-have-activity-7330774174526824448-UsFm",
+      "title": "If you’ve been laid off recently, I have tough but tender messages for you.",
+      "excerpt": "If you’ve been laid off recently, I have tough but tender messages for you: Don’t hang out with your ex-coworkers. And stop gossiping about your old company. Post-layoff community can sometimes turn into a trap.",
+      "outputs": {
+        "baseline": "Your support group is keeping you unemployed.",
+        "revised": "This solidarity is a setup to position me as your post-layoff clarity guru."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 3,
+          "humor": 2,
+          "brevity": 3,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "notes": "Baseline nails the subtext concisely. Revised overreads as self-promotion critique, missing the communal-trap warning and feeling uncharitable."
+      }
+    },
+    {
+      "id": 32,
+      "cluster": "laid_off_help",
+      "url": "https://www.linkedin.com/posts/adamsjohnd_so-youve-been-laid-off-now-what-if-you-activity-7325917481103994882-Oj57",
+      "title": "So you’ve been laid off. Now what?",
+      "excerpt": "So you’ve been laid off. Now what? If you’ve been in your career for a while, chances are you’ve been laid off at least once. It's always a surprise and it always sucks.",
+      "outputs": {
+        "baseline": "I got fired but I have LinkedIn so it's a rebrand.",
+        "revised": "You're not special, and neither was your job security."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 2,
+          "brevity": 5,
+          "kindness": 1,
+          "point_capture": 3
+        },
+        "notes": "Baseline reframes with self-aware warmth; revised is blunt but punishes the reader rather than empathizing with the post's consoling tone."
+      }
+    },
+    {
+      "id": 33,
+      "cluster": "laid_off_help",
+      "url": "https://www.linkedin.com/posts/bryancreely_if-youve-been-laid-off-and-self-doubt-is-activity-7407502703444078592-XKkI",
+      "title": "If you’ve been laid off and self-doubt is starting to creep in, here’s something to remember.",
+      "excerpt": "If you’ve been laid off and self-doubt is starting to creep in, remember: your knowledge didn’t disappear, your skills didn’t evaporate, your abilities didn’t suddenly become worthless.",
+      "outputs": {
+        "baseline": "I got fired and I need you to tell me I'm still smart.",
+        "revised": "You got laid off and need strangers to remind you you're still smart."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 5
+        },
+        "notes": "Revised nails the 2nd-person address and the stranger-validation subtext; baseline misreads it as 1st-person confession, losing accuracy and kindness."
+      }
+    },
+    {
+      "id": 34,
+      "cluster": "laid_off_help",
+      "url": "https://www.linkedin.com/posts/elvi-caperonis_if-youve-been-laid-off-recently-i-need-activity-7434596096703692802-iJbI",
+      "title": "If you’ve been laid off recently, I need you to hear this: Being laid off does not change your value.",
+      "excerpt": "If you’ve been laid off recently, I need you to hear this: Being laid off does not change your value. Your job is not your power. When I lost a job I loved, I didn’t just lose income, I lost my confidence.",
+      "outputs": {
+        "baseline": "I got laid off and I'm using your layoff to talk about mine.",
+        "revised": "You lost a job, and sharing that publicly is helping you rebuild the confidence you said you lost."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 1,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline is punchy but cynical; revised catches the vulnerability/rebuilding subtext and matches the post's sincere tone."
+      }
+    },
+    {
+      "id": 35,
+      "cluster": "laid_off_help",
+      "url": "https://www.linkedin.com/posts/cassandraworthy_if-youve-been-laid-off-the-first-thing-activity-7434643344993001473-FNwM",
+      "title": "If you’ve been laid off, the first thing you should do is update your resume.",
+      "excerpt": "If you’ve been laid off, the first thing you should do is update your resume. At least that’s what most career advisors tell us, but that's not what makes you valuable. Don't do a work audit. Do a whole human audit.",
+      "outputs": {
+        "baseline": "You got fired. Let me explain your identity to you.",
+        "revised": "You're already selling the reframe as the product."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 2,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 4
+        },
+        "notes": "Baseline lands mean and misreads the tone; revised catches the meta-sell but still slightly cold. Neither nails the warmth."
+      }
+    },
+    {
+      "id": 36,
+      "cluster": "sharing_helps",
+      "url": "https://www.linkedin.com/posts/danielcitron_sharing-this-in-case-it-helps-someone-ekyc-activity-7343949793901142016-1jxj",
+      "title": "Sharing this in case it helps someone eKYC today.",
+      "excerpt": "Sharing this in case it helps someone eKYC today: I never had a conceptual framework to understand the subtle differences between document-based eKYC and non-document-based eKYC.",
+      "outputs": {
+        "baseline": "They invented a word for scanning your passport.",
+        "revised": "I made a diagram so you don't have to."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 2,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 2,
+          "point_capture": 2
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 4
+        },
+        "notes": "Baseline mocks the post; revised captures the 'I figured it out so you don't have to' generosity that is the actual subtext."
+      }
+    },
+    {
+      "id": 37,
+      "cluster": "sharing_helps",
+      "url": "https://www.linkedin.com/posts/anirudhag1_sharing-this-in-case-it-helps-other-agencies-activity-7424808635131781120-VYPx",
+      "title": "Sharing this in case it helps other agencies, publishers, or accounts teams.",
+      "excerpt": "Sharing this in case it helps other agencies, publishers, or accounts teams. We were copied on an email chasing payment for link placements that we did not order. It included real billing details and looked legitimate at first glance.",
+      "outputs": {
+        "baseline": "Someone used your name to buy backlinks and left you holding the awkward email.",
+        "revised": "We caught a fake invoice and want credit for that, but the warning is real."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 3,
+          "humor": 2,
+          "brevity": 4,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "notes": "Baseline captures the victim framing accurately. Revised misreads tone as self-congratulatory and adds uncharitable subtext the post doesn't clearly support."
+      }
+    },
+    {
+      "id": 38,
+      "cluster": "sharing_helps",
+      "url": "https://www.linkedin.com/posts/ryan-barry-8354036_sharing-this-in-case-it-helps-anyone-reading-activity-7334790807410909184--iFe",
+      "title": "Sharing this in case it helps anyone reading.",
+      "excerpt": "Sharing this in case it helps anyone reading. Do you have a personal board of directors? If not you should. A small group of people whose opinions, expertise, and values matter to you is so valuable.",
+      "outputs": {
+        "baseline": "You crowdsourced your decision to a group chat and called it a board meeting.",
+        "revised": "You assembled a professional kitchen cabinet and want credit for being the kind of person who has one."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 3,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "notes": "Baseline wins on punch and economy. Revised earns point_capture for 'credit for being that person' but bloats the delivery."
+      }
+    },
+    {
+      "id": 39,
+      "cluster": "sharing_helps",
+      "url": "https://www.linkedin.com/posts/ecommercecoach_sharing-this-in-case-it-helps-someone-a-activity-7235195795304509441-3fNV",
+      "title": "Sharing this in case it helps someone.",
+      "excerpt": "Sharing this in case it helps someone. I tried batching my content, using hook templates, and a bit of AI to write faster. It worked for a bit and then my reach and engagement tanked.",
+      "outputs": {
+        "baseline": "I used AI to write my LinkedIn posts and LinkedIn could tell.",
+        "revised": "Optimizing for LinkedIn's algorithm made you worse at LinkedIn."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 2
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 4
+        },
+        "notes": "Baseline over-credits AI, misses batching/templates. Revised nails the optimization-backfire irony and mirrors the 'sharing so it helps someone' generosity."
+      }
+    },
+    {
+      "id": 40,
+      "cluster": "sharing_helps",
+      "url": "https://www.linkedin.com/posts/vishalsharrma_sharing-this-in-case-it-helps-someone-activity-7417146566689439745-XZmU",
+      "title": "Sharing this in case it helps someone.",
+      "excerpt": "Sharing this in case it helps someone. Muffin had been vomiting stomach acid on and off for months and it was treated as a gastro issue. Later he developed severe breathing distress and we learned he had an underlying lung problem.",
+      "outputs": {
+        "baseline": "Sharing this in case it saves your dog's life: vets treat what's obvious, not what's underneath.",
+        "revised": "Took months of wrong answers before the real diagnosis arrived; by then, breathing was already the emergency."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 5,
+          "humor": 1,
+          "brevity": 5,
+          "kindness": 5,
+          "point_capture": 5
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 1,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 4
+        },
+        "notes": "Baseline nails the subtext (systemic miss, not just timeline) in one sharp line. Revised is accurate but reads clinical and misses the implied warning to others."
+      }
+    },
+    {
+      "id": 41,
+      "cluster": "honored_to_announce",
+      "url": "https://www.linkedin.com/posts/dramrramadan2030_i-am-honored-to-announce-that-i-have-earned-activity-7429208678139895808-xVnt",
+      "title": "I am honored to announce that I have earned a Master's degree in Education and International Development with Distinction.",
+      "excerpt": "I am honored to announce that I have earned a Master's degree in Education and International Development with Distinction at UCL. I applied for the UK government Chevening Scholarship three times and was accepted on the third try.",
+      "outputs": {
+        "baseline": "I got rejected twice and I need you to know that before I tell you I got in.",
+        "revised": "I failed twice and want you to know the third win counts triple."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 5,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "notes": "Baseline nails the performative humility subtext with sharper wit. Revised overreaches with 'counts triple'—editorializes beyond what the post implies."
+      }
+    },
+    {
+      "id": 42,
+      "cluster": "honored_to_announce",
+      "url": "https://www.linkedin.com/posts/laurenmajid_incredibly-grateful-and-honored-to-announce-activity-7432474950650982400-Uock",
+      "title": "Incredibly grateful and honored to announce that I have been shortlisted for the Informa Spirit Award.",
+      "excerpt": "Incredibly grateful and honored to announce that I have been shortlisted for the Informa Spirit Award at my divisional level for the third year in a row. This recognition means a lot because it reflects the culture and values that make Informa special.",
+      "outputs": {
+        "baseline": "You got employee of the month three times and you want a parade.",
+        "revised": "Please vote for me in this company award I've been nominated for three times without winning."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 1,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "notes": "Baseline is too mean; revised nails the unspoken plea but both miss the genuine pride/values signaling baked into the original."
+      }
+    },
+    {
+      "id": 43,
+      "cluster": "honored_to_announce",
+      "url": "https://www.linkedin.com/posts/notoriousbrk_i-am-humbled-and-honored-to-announce-that-activity-7434254731142828032-u1tH",
+      "title": "I am humbled and honored to announce that I have been nominated for an Employee of the Year award.",
+      "excerpt": "I am humbled and honored to announce that I have been nominated for an Employee of the Year award at Pelican Zero.",
+      "outputs": {
+        "baseline": "I might win a trophy at work.",
+        "revised": "Please vote for me."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Revised nails the subtext (social validation-seeking). Baseline is punchy but misses the nomination-not-win detail and the implicit ask."
+      }
+    },
+    {
+      "id": 44,
+      "cluster": "honored_to_announce",
+      "url": "https://www.linkedin.com/posts/aaronhedlund_i-am-pleased-and-honored-to-announce-that-activity-7437147808144470016-lyQk",
+      "title": "I am pleased and honored to announce that the President has selected me to be one of the three Members of the Council of Economic Advisers.",
+      "excerpt": "I am pleased and honored to announce that the President has selected me to be one of the three Presidentially appointed Members of the Council of Economic Advisers. I look forward to continue serving the President and the American people.",
+      "outputs": {
+        "baseline": "You got a government job. The President knows your name.",
+        "revised": "Telling LinkedIn I got a fancy job before the White House press release does."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 5,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Revised nails the real subtext: performative LinkedIn humility-brag about a prestigious appointment. Baseline is blunt but misses the self-aware angle."
+      }
+    },
+    {
+      "id": 45,
+      "cluster": "honored_to_announce",
+      "url": "https://www.linkedin.com/posts/andrea-wetherald_im-honored-to-announce-that-i-have-been-activity-7420172946402463744-REZL",
+      "title": "I'm honored to announce that I have been chosen for a prestigious made up award I can pay to have published.",
+      "excerpt": "I'm honored to announce that I have been chosen for a prestigious made up award I can pay to have published in a leading industry online magazine I've never heard of. This is the best thing ChatGPT has ever done for me.",
+      "outputs": {
+        "baseline": "I paid $400 to be called impressive by a website.",
+        "revised": "I paid for a trophy and I'm calling it recognition."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 5,
+          "humor": 5,
+          "brevity": 5,
+          "kindness": 5,
+          "point_capture": 5
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 5,
+          "point_capture": 4
+        },
+        "notes": "Baseline nails the self-aware joke crisply. Revised dilutes the AI-generated vanity angle and loses the sharp punchline."
+      }
+    },
+    {
+      "id": 46,
+      "cluster": "proud_to_share",
+      "url": "https://www.linkedin.com/posts/iamalexbirkett_would-someone-be-proud-to-share-this-piece-activity-7257002225275695104-dYsi",
+      "title": "Would someone be proud to share this piece of content?",
+      "excerpt": "Would someone be proud to share this piece of content? It's a good heuristic for publishing content on the internet in general. If you're collaborating with experts and influencers, it's the threshold you need to hit to get distribution benefits.",
+      "outputs": {
+        "baseline": "I just discovered the secret to going viral: make things people like.",
+        "revised": "They want to go viral and need your clout to do it."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 2,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 2,
+          "point_capture": 2
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 2,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "notes": "Baseline is sardonic but misses the influencer-leverage subtext. Revised nails the transactional core tersely, though neither is warm."
+      }
+    },
+    {
+      "id": 47,
+      "cluster": "proud_to_share",
+      "url": "https://www.linkedin.com/posts/brettaylor_proud-to-share-our-partnership-withprudential-activity-7440824523194732544-J8cd",
+      "title": "Proud to share our partnership with Prudential Financial.",
+      "excerpt": "Proud to share our partnership with Prudential Financial, a global financial services leader and premier investment manager. We’re honored to partner with a purpose-driven company that has helped people build financial security and peace of mind.",
+      "outputs": {
+        "baseline": "We got a new client. Please hold for 47 lines of adjectives.",
+        "revised": "They found a big client and want you to know it."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 5,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 5
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 2,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "notes": "Baseline's 'hold for 47 lines of adjectives' nails the performative verbosity joke; revised is blunt but flat."
+      }
+    },
+    {
+      "id": 48,
+      "cluster": "proud_to_share",
+      "url": "https://www.linkedin.com/posts/richard-e-jackson_digitaltransformation-turnaroundexecution-activity-7384612177212727297-WiGc",
+      "title": "Proud to Share! I recently authored a case study titled Turnaround Digitalization with Enhanced Digital Tools.",
+      "excerpt": "Proud to Share! I recently authored a case study titled \"Turnaround Digitalization with Enhanced Digital Tools\". This article explores how we applied advanced digital tools during a recent turnaround at Kuraray America and how digitalization can improve planning and execution.",
+      "outputs": {
+        "baseline": "I wrote a PDF about my job and made it sound like I invented electricity.",
+        "revised": "Wrote a case study about work. Please read it."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 3,
+          "humor": 2,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 2
+        },
+        "notes": "Baseline captures the self-aggrandizing tone humorously; revised is too flat and loses the humble-brag subtext entirely."
+      }
+    },
+    {
+      "id": 49,
+      "cluster": "proud_to_share",
+      "url": "https://www.linkedin.com/posts/sian-harrington-thepeoplespace_proud-to-share-what-weve-been-building-activity-7396849629465583616-TeyR",
+      "title": "Proud to share what we’ve been building – a new step for The People Space.",
+      "excerpt": "Proud to share what we’ve been building – a new step for The People Space. Nine years is a long time to run anything on the internet. Since then we’ve lived through huge shifts in work, HR, and media.",
+      "outputs": {
+        "baseline": "Our website has a new design and we've been around for nine years.",
+        "revised": "Please admire my nine-year brand long enough to notice we just launched something."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 1,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 2
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 5
+        },
+        "notes": "Baseline strips meaning to bare facts; revised catches the self-congratulatory framing wrapped around an actual launch announcement."
+      }
+    },
+    {
+      "id": 50,
+      "cluster": "meta_commentary",
+      "url": "https://www.linkedin.com/posts/russellfairbanks_humble-is-it-possible-to-be-humble-when-activity-7435444038381735937-1gJ8",
+      "title": "Humble. Is it possible to be humble when you start your post with “I’m humbled to announce”?",
+      "excerpt": "Humble. Is it possible to be humble when you start your post with “I’m humbled to announce”? No. You’re not humbled. You’re thrilled. You’re proud. You worked hard for it and you want people to know.",
+      "outputs": {
+        "baseline": "You rehearsed saying \"I'm humbled\" in the mirror until it felt true.",
+        "revised": "You're not humbled. You're thrilled, and the word is just there to make ambition look like grace."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline lands a sharper joke but misses the core argument. Revised captures the post's actual thesis: the word 'humbled' launders ambition as modesty."
+      }
+    }
+  ]
+}

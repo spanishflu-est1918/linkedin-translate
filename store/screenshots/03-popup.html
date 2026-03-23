@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+  SCREENSHOT 3: Extension popup (640x400)
+  Shows: The popup UI with a clean light background.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 640px;
+      height: 400px;
+      background: #f3f2ef;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+    }
+
+    /* Extension popup */
+    .popup {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      padding: 20px;
+      width: 280px;
+    }
+    .popup h1 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: #1a1a1a;
+    }
+    .popup .subtitle {
+      color: #666;
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+    .popup label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #1a1a1a;
+    }
+    .popup input {
+      width: 100%;
+      padding: 7px 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 12px;
+      font-family: monospace;
+      color: #555;
+    }
+    .popup .saved {
+      color: #16a34a;
+      font-size: 11px;
+      margin-top: 6px;
+    }
+    .popup .footer {
+      margin-top: 18px;
+      padding-top: 12px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 11px;
+      color: #999;
+    }
+
+    /* Callout */
+    .callout {
+      max-width: 220px;
+    }
+    .callout h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .callout p {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .callout .step {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      margin-bottom: 8px;
+      font-size: 12px;
+      color: #666;
+    }
+    .step-num {
+      width: 18px;
+      height: 18px;
+      background: #0a66c2;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="callout">
+    <h2>Zero setup.<br>Just hover.</h2>
+    <p>Works automatically on your LinkedIn feed. Configure your API endpoint if self-hosting.</p>
+    <div class="step">
+      <div class="step-num">1</div>
+      <span>Install the extension</span>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <span>Open LinkedIn</span>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <span>Hover any post to see the truth</span>
+    </div>
+  </div>
+
+  <div class="popup">
+    <h1>DeLinked</h1>
+    <p class="subtitle">What they actually mean.</p>
+    <label for="apiUrl">API URL</label>
+    <input type="text" id="apiUrl" value="https://linkedin-translate.spanishflu.workers.dev" readonly />
+    <div class="saved">✓ Saved</div>
+    <div class="footer">Translate LinkedIn posts into honest human language.</div>
+  </div>
+</body>
+</html>

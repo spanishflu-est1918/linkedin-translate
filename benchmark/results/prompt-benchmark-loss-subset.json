@@ -1,0 +1,202 @@
+{
+  "generatedAt": "2026-03-23T15:14:23.817Z",
+  "model": "sonnet",
+  "corpusSize": 6,
+  "aggregate": {
+    "baseline": {
+      "accuracy": 21,
+      "humor": 17,
+      "brevity": 27,
+      "kindness": 18,
+      "point_capture": 20
+    },
+    "revised": {
+      "accuracy": 25,
+      "humor": 21,
+      "brevity": 26,
+      "kindness": 26,
+      "point_capture": 26
+    },
+    "wins": {
+      "baseline": 1,
+      "revised": 5,
+      "tie": 0
+    }
+  },
+  "results": [
+    {
+      "id": 11,
+      "cluster": "humbled_to_announce",
+      "url": "https://www.linkedin.com/posts/ryankberner_humbled-to-announce-ive-joined-topline-pro-activity-7434236149243748352-KIeb",
+      "title": "Humbled to announce I’ve joined Topline Pro as VP of Sales.",
+      "excerpt": "Humbled to announce I’ve joined Topline Pro as VP of Sales. The first thing I saw when I walked into the office was a sign on the wall that said: “No Bullsh*t.” I remember thinking in that moment, “I’m home.”",
+      "outputs": {
+        "baseline": "I joined a sales company that displays profanity to prove it's honest.",
+        "revised": "I got the title, and the office décor confirmed I'll fit right in."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 4,
+          "kindness": 2,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline is cynical and flat. Revised nails the self-aware vanity beneath 'humbled' while staying playful and landing the subtext."
+      }
+    },
+    {
+      "id": 13,
+      "cluster": "humbled_to_announce",
+      "url": "https://www.linkedin.com/posts/marina-kobzeva-solidarity_im-humbled-to-announce-that-over-the-last-activity-7435332411300745217-S-hq",
+      "title": "I’m humbled to announce that over the last two months, I have been a mess.",
+      "excerpt": "I’m humbled to announce that over the last two months, I have been a mess. No new role or fellowship. Not even a certification. I remained quietly, professionally functional, but a mess nonetheless.",
+      "outputs": {
+        "baseline": "I'm doing fine and I need you to know that.",
+        "revised": "Turns out \"professionally functional\" is the promotion you don't put on LinkedIn."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 2,
+          "humor": 2,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 5,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline misses the subtext entirely. Revised nails the irony of performing okayness while quietly unraveling — the post's whole point."
+      }
+    },
+    {
+      "id": 21,
+      "cluster": "stop_scrolling",
+      "url": "https://www.linkedin.com/posts/justinwelsh_stop-scrolling-start-creating-every-activity-7346867374974746626-TjT4",
+      "title": "Stop scrolling, start creating.",
+      "excerpt": "Stop scrolling. Start creating. Every minute you spend consuming could be a minute spent building. Your first 100 posts will suck. Your first product will flop. Your first launch will disappoint. And that's exactly why you need to start today.",
+      "outputs": {
+        "baseline": "You already know this. You just want to post it.",
+        "revised": "Your future failures are so valuable, you should log off and go have them right now."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 3,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 5,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 5
+        },
+        "notes": "Baseline is sharp but cynical; revised captures the earnest paradox (failure=value) while being funnier and more faithful to the post's sincere core."
+      }
+    },
+    {
+      "id": 27,
+      "cluster": "personal_stuff",
+      "url": "https://www.linkedin.com/posts/mathewclarkau_i-dont-usually-post-about-personal-stuff-activity-7433794130209853440---sd",
+      "title": "I don’t usually post about personal stuff on LinkedIn. But this matters.",
+      "excerpt": "I don’t usually post about personal stuff on LinkedIn. But this matters. A close friend of ours has recently been diagnosed with breast cancer. My wife has decided to do a squat challenge to raise funds for the National Breast Cancer Foundation.",
+      "outputs": {
+        "baseline": "This one's real. Go support the squat challenge.",
+        "revised": "My wife is doing squats until strangers on the internet donate to cancer research. Please help."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 2,
+          "brevity": 4,
+          "kindness": 4,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 4,
+          "humor": 4,
+          "brevity": 5,
+          "kindness": 4,
+          "point_capture": 4
+        },
+        "notes": "Revised earns the laugh without mocking; baseline is earnest but vague. Both miss the personal friend angle."
+      }
+    },
+    {
+      "id": 31,
+      "cluster": "laid_off_help",
+      "url": "https://www.linkedin.com/posts/laurieruettimann_if-youve-been-laid-off-recently-i-have-activity-7330774174526824448-UsFm",
+      "title": "If you’ve been laid off recently, I have tough but tender messages for you.",
+      "excerpt": "If you’ve been laid off recently, I have tough but tender messages for you: Don’t hang out with your ex-coworkers. And stop gossiping about your old company. Post-layoff community can sometimes turn into a trap.",
+      "outputs": {
+        "baseline": "You got fired. Burn the group chat.",
+        "revised": "This pain is real, but I found a way to feel wise inside it."
+      },
+      "evaluation": {
+        "winner": "baseline",
+        "baseline": {
+          "accuracy": 4,
+          "humor": 5,
+          "brevity": 5,
+          "kindness": 3,
+          "point_capture": 4
+        },
+        "revised": {
+          "accuracy": 2,
+          "humor": 1,
+          "brevity": 3,
+          "kindness": 5,
+          "point_capture": 2
+        },
+        "notes": "Baseline nails the actionable subtext with wit. Revised misreads—post isn't about the author's journey; it's advice to others."
+      }
+    },
+    {
+      "id": 37,
+      "cluster": "sharing_helps",
+      "url": "https://www.linkedin.com/posts/anirudhag1_sharing-this-in-case-it-helps-other-agencies-activity-7424808635131781120-VYPx",
+      "title": "Sharing this in case it helps other agencies, publishers, or accounts teams.",
+      "excerpt": "Sharing this in case it helps other agencies, publishers, or accounts teams. We were copied on an email chasing payment for link placements that we did not order. It included real billing details and looked legitimate at first glance.",
+      "outputs": {
+        "baseline": "Your vendor's email list got breached and someone is invoicing your clients for fake link placements.",
+        "revised": "Someone is sending fake invoices for link placements you didn't order, and they're good enough to fool your accounts team."
+      },
+      "evaluation": {
+        "winner": "revised",
+        "baseline": {
+          "accuracy": 3,
+          "humor": 2,
+          "brevity": 4,
+          "kindness": 3,
+          "point_capture": 3
+        },
+        "revised": {
+          "accuracy": 5,
+          "humor": 2,
+          "brevity": 4,
+          "kindness": 5,
+          "point_capture": 5
+        },
+        "notes": "Baseline assumes a breach (unconfirmed); revised stays true to the post's actual warning and captures the 'convincingly fake' subtext."
+      }
+    }
+  ]
+}
